@@ -1,4 +1,4 @@
-# TSX-Calculator
+# calculator-typescript
 
 #### created using Typescript and MUI-core (formerly called Material-UI)
 
@@ -9,13 +9,13 @@ This is our most-used tool calculator with some new design and written using typ
 Install this package:
 
 ```shell
-npm install tsx-calculator
+npm install calculator-typescript
 ```
 
 Import the Counter component:
 
 ```js
-import { Calculator } from "tsx-calculator";
+import { Calculator } from "calculator-typescript";
 ```
 
 You can then render the `Calculator` component like any other React component in JSX like below

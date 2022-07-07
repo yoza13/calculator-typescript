@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box, Stack, Container, Card, CardHeader } from "@mui/material";
-import { useStyles } from "../../useStyles";
+import { useStyles } from "./useStyles";
 import { ButtonPanel } from "./ButtonPanel";
 
 export const Calculator: React.FC = () => {

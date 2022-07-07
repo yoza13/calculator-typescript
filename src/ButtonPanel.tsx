@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box, Button, Stack } from "@mui/material";
-import { useStyles } from "../../useStyles";
+import { useStyles } from "./useStyles";
 
 interface ButtonPanelProps {
   setValue: (value: number[]) => void;
@@ -28,13 +28,12 @@ export const ButtonPanel: React.FC<ButtonPanelProps> = ({
     }
   };
   const operate = (event: any) => {
-    const operation = (event.target as HTMLInputElement).textContent;
+    const operation: string = (event.target as HTMLInputElement).textContent!;
 
     if (value.length === 1 || operator === "") {
-      console.log("+++++");
       setOperator(operation);
     } else {
-      let result;
+      let result: number;
       switch (operator) {
         case "+":
           result = value[0] + value[1];
@@ -49,7 +48,7 @@ export const ButtonPanel: React.FC<ButtonPanelProps> = ({
           result = value[0] / value[1];
           break;
       }
-      setValue([result]);
+      setValue([result!]);
       setOperator(operation);
     }
   };

@@ -1,6 +1,6 @@
 {
   "name": "tsx-calculator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Basic calculator created using react and typescript.",
   "main": "./dist/App.js",
   "types": "./dist/App.d.ts",

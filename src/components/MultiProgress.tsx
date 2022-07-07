@@ -58,7 +58,6 @@ const createElementArray = (elements: ProgressElement[]) => {
 };
 
 const MultiProgress: React.FC<IMultiProgressProps> = ({ elements }) => {
-  console.log(elements);
   const classes = useStyles();
   return (
     <div className={classes.multiProgressContainer}>
